@@ -1,1 +1,41 @@
-Hello World !
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Border Layout - jQuery EasyUI Demo</title>
+	<!--<link rel="stylesheet" type="text/css" href="stylesheets/default/easyui.css">-->
+	<link rel="stylesheet" type="text/css" href="stylesheets/metro/easyui.css">
+	<!--<link rel="stylesheet" type="text/css" href="stylesheets/dark-hive/easyui.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="stylesheets/pepper-grinder/easyui.css">-->
+	<link rel="stylesheet" type="text/css" href="stylesheets/icon.css">
+	<script type="text/javascript" src="javascripts/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="javascripts/main.js"></script>
+</head>
+<body class="easyui-layout">
+	<div data-options="region:'north',border:false" style="height:100px;padding:10px">
+		<h1>Hello Lily</h1>
+	</div>
+	<div id="leftRegion" data-options="region:'west',split:true,title:'菜单'" style="width:150px;padding:10px;">
+		<ul id="mainmenu" class="easyui-tree">  
+			<li>About Lily</li>
+			<li>
+				<span>3D Demo</span>
+				<ul>
+					<li>Demo 1</li>
+				</ul>
+			</li>
+			<li>About Lily</li>
+			<li>About Lily</li>
+		</ul>  
+	</div>
+	<div data-options="region:'east',split:true,collapsed:true,title:'East'" style="width:100px;padding:10px;">east region</div>
+	<div data-options="region:'south',border:false" style="height:50px;padding:10px;">copyright@qintianxiang</div>
+	<div data-options="region:'center'">
+		<div>
+			<button id="btnDlg" >Show Dialog</button>
+			<div id="dd" style="padding:5px;width:400px;height:200px;" closed=true></div>
+		</div>
+	</div>
+</body>
+</html>
